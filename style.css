@@ -1,0 +1,247 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.site-content{
+	background-color: #232531;
+	padding-bottom: 60px;
+}
+
+.container{
+	max-width:1288px;         
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/*-----------------------------------------
+ Header
+ ----------------------------------------*/
+
+.site-header{
+	display: flex;
+	padding-top: 50px;
+	margin-bottom: 200px;
+}
+
+
+.site-header .site-title{
+	color: #fff;
+}
+
+
+.site-header .site-title .hightlight{
+	color: #FF5733;
+
+}
+
+.site-content .site-header ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	justify-content: flex-end;
+	flex-grow: 1;
+
+}
+.site-content ul li{
+	margin-right: 20px;
+}
+
+.site-content ul li a{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.site-content ul li a:hover{
+	color: #FF5733;
+}
+
+.site-content ul li .btn{
+	border: 1px solid #fff;
+	padding: 15px 10px 15px 10px;
+	color: #FF5733; 
+}
+
+
+.site-content ul li .active{
+	color:#FF5733;
+}
+
+/*----------------------------------------------
+Banner
+-------------------------------------------------*/
+
+.site-content .banner{
+	margin-bottom: 200px;
+}
+
+.site-content .banner .descrip{
+	font-size: 27px;
+	line-height: 31px;
+	font-weight: 400;
+	margin:16px;
+
+}
+
+.site-content .banner .banner-title{
+	font-size: 96px;
+	line-height: 100px;
+	font-weight: 400;
+	color:#FF5733;
+}
+
+
+.site-content .banner .banner-meta{
+	font-size: 27px;
+	line-height: 31px;
+	margin: 48px;
+	font-weight: 400;
+}
+
+.site-content .banner .banner-btn{
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	background-color: #3f4046;
+	padding: 18px 30px 18px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/*------------------------------------------------
+Speaker section
+--------------------------------------------------*/
+.site-content .speaker-section .section-header{
+	display:flex;
+	margin-bottom: 60px;
+}
+.site-content .speaker-section .section-header .section-title{
+	font-size: 48px;
+	line-height: 52px;
+	font-weight: 400;
+	margin-right: 200px;
+	margin-left: 80px;
+	margin-bottom: 80px;
+	position: relative;	
+}
+
+.site-content .speaker-section .section-header .section-title:after{
+	content: '';
+	position: absolute;
+	top: 80px;
+	left: -60px;
+	width: 150px;
+	height: 2px;
+	background: linear-gradient(to right, #c70039, #ff5733 70%);
+}
+
+.site-content .speaker-section .section-header p{
+	flex-basis: 400px;
+	margin-top: 60px;
+}
+
+.speaker-section .row{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.speaker-section .row .text-holder{
+	align-self: center;
+	margin-bottom: 50px;
+
+}
+
+.speaker-section .row .img-holder{
+	margin-right: 88px;
+	
+}
+
+.speaker-section .row .img-holder img{
+	width: 500px;
+}
+
+.speaker-section .row .text-holder ul{
+	display: flex;
+}
+
+.speaker-section .row .text-holder .name{
+	margin-bottom: 24px;
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: 400;
+	position: absolute;
+	top: 60px;
+	left: 34%;
+}
+
+.speaker-section .row .text-holder .post{
+	font-size: 16px;
+	line-height: 20px;
+	color: #FF5733;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.speaker-section .row .text-holder p{
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	width: 500px;
+	margin-bottom: 20px;
+}
+
+.speaker-section .row .text-holder .social-link{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.speaker-section .row .text-holder .social-link .title{
+	margin-right: 30px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.speaker-section .row .text-holder .social-link ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        max-width: 100%;
+    } 
+}           
